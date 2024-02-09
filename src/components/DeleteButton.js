@@ -4,7 +4,7 @@ import { MdDelete } from 'react-icons/md';
 
 const DeleteButton = ({ photoId, setUpdateUI }) => {
   const handleChange = () => {
-    axios.delete(`http://localhost:5000/api/delete/${photoId}`)
+    axios.delete(`https://backend3-ocka.onrender.com/api/delete/${photoId}`)
       .then(() => {
         console.log("Photo deleted successfully");
         const change=photoId+"a";
