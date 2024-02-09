@@ -12,7 +12,7 @@ const WildLife = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/get/wildLife")
+      .get("https://backend3-ocka.onrender.com/api/get/wildLife")
       .then((res) => {
         console.log(res.data);
         setPhotos(res.data);
