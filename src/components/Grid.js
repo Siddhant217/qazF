@@ -37,7 +37,7 @@ const Grid = ({ photos ,setUpdateUI}) => {
         {photos.map(({ photo, _id }) => (
           <div key={_id} className="grid__item">
             <img className="images"
-              src={`http://localhost:5000/uploads/${photo}`}
+              src={`https://backend3-ocka.onrender.com/uploads/${photo}`}
               alt="grid_image"
             />
             <div className="button-container">
