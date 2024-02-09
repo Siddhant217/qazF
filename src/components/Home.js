@@ -10,7 +10,7 @@ function Home (){
     // const [click,setClick]=useState(false);
   
     useEffect(() => {
-      axios.get("http://localhost:5000/api/get")
+      axios.get("https://backend3-ocka.onrender.com/api/get")
         .then((res) => {
           console.log(res.data);
           setPhotos(res.data);
