@@ -16,7 +16,7 @@ const UploadForm = ({ setUpdateUI, category, onClose }) => {
     formData.append("tags", tags);
 
     axios
-      .post("http://localhost:5000/api/save", formData)
+      .post("https://backend3-ocka.onrender.com/api/save", formData)
       .then((res) => {
         console.log(res.data);
         setUpdateUI(res.data._id);
