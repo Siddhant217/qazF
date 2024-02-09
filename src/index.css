@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  background-color:#5C8374 ;
+}
+
+nav {
+  background-color:  #040D12;
+  color: #fff;
+  padding: 1rem 5rem;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
+}
+.nav__logo {
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #fff;
+  background-color:  #040D12;
+}
+
+.button {
+  background-color: #fff;
+  font-size: 60px;
+  height: 65px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 1rem;
+  padding: 5rem;
+  padding-top: 0;
+}
+
+.grid__item {
+  position: relative;
+  width: 100%;
+  padding-top: 66.6667%; /* 2/3 aspect ratio (3:2) */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.button-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Add a semi-transparent background */
+}
+
+.imagebutton {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.grid__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2rem 5rem;
+}
+.types
+{
+  /* background-color:#5C8374 ; */
+  display: flex;  
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+
+
+/* Footer: */
+.footer {
+  background-color: #183D3D;
+  padding: 20px 0;
+  text-align: center;
+  /* position: absolute; */
+  bottom: 0;
+  /* position: fixed; */
+}
+
+.footer__content {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #183D3D;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+  background-color: #183D3D;
+  
+}
+.icons{
+  margin-bottom: 15px;
+}
+.social-icons
+{
+  background-color: #183D3D;
+  /* text-align: center; */
+}
+.icons
+{
+  background-color: #183D3D;
+}
+.logo-img{
+  background-color: #183D3D;
+  height: 25px;
+  
+}
+  
+#deleteButtonIcon
+{
+  display: inline-flex; 
+  /* align-items: center;  */
+  /* gap: 2px; */
+  background-color: transparent;
+  margin-left: 22%;
+
+}
+.deleteIcon
+{
+  font-size: 20px;
+  color: red;
+  /* padding: 5px 10px; */
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#downloadButtonIcon
+{
+  font-size: 20px;
+  color: white;
+  /* padding: 5px 10px; */
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 22%;
+}
+
+#downloadButtonIcon1
+{
+  background-color: transparent;
+  margin-top: 10%;
+}
+#likeButtonr , #LikeCountr
+{
+  background-color: transparent;
+}
+#likeButtonr
+{
+  margin-left: 20%;
+}
+#likeButtonrIcon
+{
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10%;
+}
+
+#addButton
+{
+   /* background-color: transparent; */
+   /* background-color: rgba(0, 0, 0, 1);  */
+}
+
+/* CSS for form */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+/* own */
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 30px;
+}
