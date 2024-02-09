@@ -12,7 +12,7 @@ const Nature = ({wtoFetch}) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/get/nature")
+      .get("https://backend3-ocka.onrender.com/api/get/nature")
       .then((res) => {
         console.log(res.data);
         setPhotos(res.data);
