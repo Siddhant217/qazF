@@ -68,7 +68,7 @@ const LikeCount = ({ photoId, setUpdateUI }) => {
 
   const handleLike = () => {
     axios
-      .put(`http://localhost:5000/api/updateLike/${photoId}`)
+      .put(`https://backend3-ocka.onrender.com/api/updateLike/${photoId}`)
       .then(() => {
         console.log('Photo like updated successfully');
         setCount(count + 1); // Update the like count in the component state
@@ -82,7 +82,7 @@ const LikeCount = ({ photoId, setUpdateUI }) => {
   useEffect(() => {
     // Fetch initial like count from backend when the component mounts
     axios
-      .get(`http://localhost:5000/api/getLikeCount/${photoId}`)
+      .get(`https://backend3-ocka.onrender.com/api/getLikeCount/${photoId}`)
       .then((response) => {
         console.log('Photo fetch updated successfully');
         setCount(response.data.likeCount); // Set the initial like count
