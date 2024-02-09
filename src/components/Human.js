@@ -12,7 +12,7 @@ const Human = ({wtoFetch}) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/get/human")
+      .get("https://backend3-ocka.onrender.com/api/get/human")
       .then((res) => {
         console.log(res.data);
         setPhotos(res.data);
